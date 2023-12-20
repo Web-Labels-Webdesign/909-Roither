@@ -1,0 +1,39 @@
+@font-face {
+  font-display: swap; 
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$app-css-relative-asset-path}/fonts/PTSerif-Regular.ttf') format('truetype'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url('#{$app-css-relative-asset-path}/fonts/PTSerif-Italic') format('truetype'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url('#{$app-css-relative-asset-path}/fonts/PTSerif-Bold.ttf') format('truetype'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'PT Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url('#{$app-css-relative-asset-path}/fonts/PTSerif-BoldItalic.ttf') format('truetype'); 
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  line-height: 1.2!important;
+}
+@media screen and (min-width: 1400px) {
+  h1, .h1 {
+    &.big {
+      font-size: 60px;
+    }
+  }
+}
