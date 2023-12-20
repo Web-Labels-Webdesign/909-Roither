@@ -1,0 +1,273 @@
+.base-slider-controls {
+    .base-slider-controls-prev, .base-slider-controls-next {
+        height: 40px;
+        width: 40px;
+        background-color: $sw-color-brand-primary;
+        border-radius: 10px;
+        line-height: 1;
+        .icon {
+            color: #fff;
+        }
+    }
+    .base-slider-controls-prev {
+        left: 0;
+    }
+    .base-slider-controls-next {
+        right: 0;
+    }
+}
+
+
+.cat-teaser-container {
+    height: 390px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        &:hover {
+            ~ .cat-teaser {
+                padding-bottom: 40px;
+            }
+        }
+    }
+    .cat-teaser {
+        height: 100%;
+        display: flex;
+        align-items: end;
+        padding: 20px 40px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: 500ms;
+        background-size:  cover;
+        
+        img {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #fff;
+        }
+        div {
+            z-index: 1;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(0deg, #222 00%, rgba(255, 255, 255, 0) 50%);
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.collapse-content {
+    transition: 500ms;
+}
+
+.custom-borders {
+    position: relative;
+    overflow: visible;
+    &::before {
+        content: "";
+        display: block;
+        height: auto;
+        width: 100%;
+        background: url('/media/7d/60/27/1703067212/Ausschluss 2.svg');
+        height: 100px;
+        position: absolute;
+        top: -100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    &::after {
+        content: "";
+        display: block;
+        height: auto;
+        width: 100%;
+        background: url('/media/c7/78/73/1703067213/Ausschluss 1.svg');
+        height: 100px;
+        position: absolute;
+        bottom: -100px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+
+.tile-image {
+    position: relative;
+    img {
+        border-radius: 30px;
+        max-width: calc(100% - 40px);
+    }
+    .tile-text-container {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        right: 0;
+        flex-wrap: wrap;
+        .tile {
+            padding: 20px 40px;
+            border-radius: 30px;
+            max-width: calc(100% - 20px);
+            &.light {
+                background-color: $light-gray;
+            }
+            &.primary {
+                background-color: $sw-color-brand-primary;
+                color: #fff;
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.helpful-links-container {
+    position: relative;
+    .covertag {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        &:hover ~ .helpful-content {
+            background-color: $sw-color-brand-secondary;
+            .fake-btn {
+                background-color: #fff;
+                color: $sw-color-brand-primary;
+            }
+        }
+    }
+    &.course {
+        .helpful-content {
+            background-image: url('/media/f1/bc/e3/1703067212/date.svg');
+        }
+    }
+    &.maintenance {
+        .helpful-content {
+            background-image: url('/media/d8/bd/33/1703067212/first-aid-kit-1.svg');
+        }
+    }
+    &.consulting {
+        .helpful-content {
+            background-image: url('/media/e2/71/a8/1703067212/phone-call.svg');
+        }
+    }
+    &.socialmedia {
+        .helpful-content {
+            background-image: url('/media/03/ca/16/1703067213/share.svg');
+        }
+    }
+    .helpful-content {
+        background-color: $sw-color-brand-primary;
+        padding: 40px;
+        min-height: 410px;
+        border-radius: 30px;
+        transition: 500ms;
+        background-repeat: no-repeat;
+        background-position: 40px 105%;
+        .fake-btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 30px 0 30px 0;
+            background-color: $sw-color-brand-secondary;
+            color: #fff;
+            transition: 500ms;
+            padding: 5px 20px;
+            font-size: 30px;
+        }
+        .btn-link {
+            padding-left: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+.white-blog {
+    a, .card-text {
+        color: #fff;
+    }
+    .text-muted {
+        color: $sw-color-brand-primary!important;
+        .icon-calendar {
+            display: none;
+        }
+    }
+    .btn-outline-primary {
+        border: none;
+        padding-left: 0;
+        font-size: 12px;
+        &:hover {
+            color: #fff;
+            background: unset;
+        }
+    }
+    .netzp-blog-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+}
+.netzp-blog6-list .blog-slider  {
+    .blog-card .blog-card-paceholder {
+        height: auto;
+    }
+    .cover {
+        height: 170px;
+        border-radius: 30px;
+    }
+    .mt-auto {
+        margin-top: 0!important;
+    }
+}
+.text-white {
+    a {
+        color: #fff!important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cat-teaser-container {
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .cms-block-image-four-column {
+        .col-md-3 {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .tile-image {
+        img {
+            display: none;
+        }
+        .tile-text-container {
+            position: unset;
+            .tile {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .cat-teaser-container {
+        height: 300px;
+    }
+}

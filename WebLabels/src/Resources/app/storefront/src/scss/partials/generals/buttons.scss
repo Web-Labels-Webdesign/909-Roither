@@ -1,0 +1,18 @@
+.btn {
+    transition: 300ms;
+    &.btn-primary {
+        color: #fff;
+    }
+    &.btn-link {
+        color: $sw-text-color;
+        &:hover {
+            background: $light-gray;
+        }
+        &.text-white:hover {
+            color: $sw-text-color!important;
+        }
+    }
+    &.btn-primary, &.btn-secondary, &.btn-link, &.btn-light {
+        border-radius: 10px;
+    }
+}
