@@ -249,6 +249,11 @@
         color: #fff!important;
     }
 }
+.cms-block-image-four-column {
+    .col-md-3 {
+        margin-bottom: 20px;
+    }
+}
 @media screen and (min-width: 768px) {
     .cat-teaser-container {
         margin-bottom: 40px;
@@ -278,5 +283,10 @@
 @media screen and (max-width: 575px) {
     .cat-teaser-container {
         height: 300px;
+    }
+    .cms-block-image-four-column {
+        .col-md-3 {
+            width: 100%;
+        }
     }
 }
