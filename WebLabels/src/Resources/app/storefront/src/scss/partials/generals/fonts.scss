@@ -30,6 +30,12 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 1.2!important;
 }
+h1, .h1 {
+  font-size: calc(1.35rem + 1vw);
+  &.big {
+    font-size: calc(1.35rem + 2vw);
+  }
+}
 @media screen and (min-width: 1400px) {
   h1, .h1 {
     &.big {
