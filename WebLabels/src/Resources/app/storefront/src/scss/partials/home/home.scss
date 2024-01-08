@@ -52,6 +52,7 @@
         
         img {
             margin-bottom: 10px;
+            max-height: 60px;
         }
         p {
             color: #fff;
@@ -117,7 +118,7 @@
         height: 100px;
         position: absolute;
         bottom: -99px;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
     }
@@ -173,6 +174,15 @@
             }
         }
     }
+    &:hover .helpful-content {
+        background-color: $sw-color-brand-secondary;
+        .fake-btn {
+            background-color: #fff;
+            svg {
+                color: $sw-color-brand-primary;
+            }
+        }
+    }
     &.course {
         .helpful-content {
             background-image: url('/media/f1/bc/e3/1703067212/date.svg');
@@ -219,6 +229,19 @@
         .btn-link {
             padding-left: 0;
             font-size: 12px;
+        }
+    }
+    .social-icons {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        a {
+            border-radius: 3px;
+            transition: 500ms;
+            &:hover {
+                text-decoration: none;
+                background-color: rgba(255,255,255,.3);
+            }
         }
     }
 }
@@ -342,5 +365,14 @@
                 margin-right: 10px;
             }
         }
+    }
+}
+.more-shops {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+        max-height: 78px;
     }
 }
